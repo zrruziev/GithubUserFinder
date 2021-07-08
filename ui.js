@@ -49,19 +49,19 @@ const showProfile = () => {
           <div class="row">
             <div class="col-sm-3">
               <img class="img-fluid mb-2" src="${profileInfo.avatar_url}">
-              <a href="${profileInfo.html_url}" target="_blank" class="btn btn-primary d-block btn-block mb-4">View Profile</a>
+              <a href="${profileInfo.html_url}" target="_blank" class="btn btn-success d-block btn-block mb-4">View Profile</a>
             </div>
             <div class="col-sm-9">
-              <span class="badge badge-sm btn-primary text-white">Public Repos: ${profileInfo.public_repos}</span>
+              <span class="badge badge-sm btn-warning text-white">Public Repos: ${profileInfo.public_repos}</span>
               <span class="badge badge-sm  btn-secondary text-white">Public Gists: ${profileInfo.public_gists}</span>
               <span class="badge badge-sm  btn-success text-white">Followers: ${profileInfo.followers}</span>
               <span class="badge badge-sm  btn-info text-white">Following: ${profileInfo.following}</span>
               <br><br>
               <ul class="list-group">
-                <li class="list-group-item">Company: ${profileInfo.company}</li>
-                <li class="list-group-item">Website/Blog: ${profileInfo.blog}</li>
-                <li class="list-group-item">Location: ${profileInfo.location}</li>
-                <li class="list-group-item">Member Since: ${profileInfo.created_at}</li>
+                <li class="list-group-item text-info">Company: ${profileInfo.company}</li>
+                <li class="list-group-item text-info">Website/Blog: ${profileInfo.blog}</li>
+                <li class="list-group-item text-info">Location: ${profileInfo.location}</li>
+                <li class="list-group-item text-info">Member Since: ${profileInfo.created_at}</li>
               </ul>
             </div>
           </div>
@@ -84,10 +84,10 @@ const showRepos = () => {
         <div class="card card-body mb-2 shadow">
           <div class="row">
             <div class="col-md-6">
-              <a href="${i.html_url}" target="_blank">${i.name}</a>
+              <a href="${i.html_url}" class="text-success" target="_blank">${i.name}</a>
             </div>
             <div class="col-md-6">
-            <span class="badge badge-sm btn-primary">Stars: ${i.stargazers_count}</span>
+            <span class="badge badge-sm btn-warning">Stars: ${i.stargazers_count}</span>
             <span class="badge badge-sm btn-secondary">Watchers: ${i.watchers_count}</span>
             <span class="badge badge-sm btn-success">Forks: ${i.forms_count}</span>
             </div>
