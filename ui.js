@@ -78,6 +78,7 @@ const showRepos = () => {
   fetchUser(searchInput.value)
     .then((res) => {
       reposInfo = res.repos;
+      console.log("imo ", reposInfo)
       let output = '';
       reposInfo.forEach(i => {
         output += `
@@ -89,7 +90,7 @@ const showRepos = () => {
             <div class="col-md-6">
             <span class="badge badge-sm btn-warning">Stars: ${i.stargazers_count}</span>
             <span class="badge badge-sm btn-secondary">Watchers: ${i.watchers_count}</span>
-            <span class="badge badge-sm btn-success">Forks: ${i.forms_count}</span>
+            <span class="badge badge-sm btn-success">Forks: ${i.forks_count}</span>
             </div>
           </div>
         </div>`;
