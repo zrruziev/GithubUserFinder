@@ -52,10 +52,10 @@ const showProfile = () => {
               <a href="${profileInfo.html_url}" target="_blank" class="btn btn-success d-block btn-block mb-4">View Profile</a>
             </div>
             <div class="col-sm-9">
-              <span class="badge badge-sm btn-warning text-white">Public Repos: ${profileInfo.public_repos}</span>
-              <span class="badge badge-sm  btn-secondary text-white">Public Gists: ${profileInfo.public_gists}</span>
-              <span class="badge badge-sm  btn-success text-white">Followers: ${profileInfo.followers}</span>
-              <span class="badge badge-sm  btn-info text-white">Following: ${profileInfo.following}</span>
+              <span class="btn btn-sm btn-warning text-white">Public Repos: ${profileInfo.public_repos}</span>
+              <span class="btn btn-sm  btn-secondary text-white">Public Gists: ${profileInfo.public_gists}</span>
+              <span class="btn btn-sm  btn-success text-white">Followers: ${profileInfo.followers}</span>
+              <span class="btn btn-sm  btn-info text-white">Following: ${profileInfo.following}</span>
               <br><br>
               <ul class="list-group">
                 <li class="list-group-item text-info">Company: ${profileInfo.company}</li>
@@ -88,9 +88,9 @@ const showRepos = () => {
               <a href="${i.html_url}" class="text-success" target="_blank">${i.name}</a>
             </div>
             <div class="col-md-6">
-            <span class="badge badge-sm btn-warning">Stars: ${i.stargazers_count}</span>
-            <span class="badge badge-sm btn-secondary">Watchers: ${i.watchers_count}</span>
-            <span class="badge badge-sm btn-success">Forks: ${i.forks_count}</span>
+            <span class="btn btn-sm btn-warning">Stars: ${i.stargazers_count}</span>
+            <span class="btn btn-sm btn-secondary">Watchers: ${i.watchers_count}</span>
+            <span class="btn btn-sm btn-success">Forks: ${i.forks_count}</span>
             </div>
           </div>
         </div>`;
