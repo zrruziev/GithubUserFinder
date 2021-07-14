@@ -59,7 +59,7 @@ const showProfile = () => {
               <br><br>
               <ul class="list-group">
                 <li class="list-group-item text-info">Company: ${profileInfo.company}</li>
-                <li class="list-group-item text-info">Website/Blog: ${profileInfo.blog}</li>
+                <li class="list-group-item text-info">Website/Blog: <a href="${"https://"+profileInfo.blog}">${profileInfo.blog}</a></li>
                 <li class="list-group-item text-info">Location: ${profileInfo.location}</li>
                 <li class="list-group-item text-info">Member Since: ${profileInfo.created_at}</li>
               </ul>
