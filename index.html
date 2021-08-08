@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Github User Finder</title>
-  <link href="https://bootswatch.com/5/slate/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <nav class="navbar navbar-dark bg-dark mb-3">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github User Finder</title>
+    <link
+      href="https://bootswatch.com/5/slate/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark mb-3">
+      <div class="container">
         <a class="navbar-brand" href="#">Github Finder</a>
-    </div>
-  </nav>
+      </div>
+    </nav>
 
-  <div class="container searchContainer">
-    <div class="search card card-body shadow">
-      <h1 class="fw-bold">Search Github Users</h1>
-      <p class="lead"> Enter a username to fetch a user profile info and repos</p>
-      <div class="d-flex">
-        <input type="text" id="searchUser" class="form-control" placeholder="Search">
-        <button id="searchBtn" class="btn btn-outline-success mx-2">Search</button>
+    <div class="container searchContainer">
+      <div class="search card card-body shadow">
+        <h1 class="fw-bold">Search Github Users</h1>
+        <p class="lead">
+          Enter a username to fetch a user profile info and repos
+        </p>
+        <div class="d-flex">
+          <input
+            type="text"
+            id="searchUser"
+            class="form-control text-light"
+            placeholder="Search"
+          />
+          <button id="searchBtn" class="btn btn-outline-success mx-2">
+            Search
+          </button>
+        </div>
+      </div>
+      <br />
+      <div id="alertMessage">
+        <div id="profile"></div>
       </div>
     </div>
-    <br>
-    <div id="alertMessage">
-      <div id="profile"></div>
-    </div>
-  </div>
 
-  <footer class="mt-5 p-3 text-center bg-secondary text-white">Github Finder &copy <a href="http://www.zrruziev.com/" target="_blank" class="text-dark text-decoration-none mx-1"> zrruziev</a></footer>
+    <footer class="mt-5 p-3 text-center bg-secondary text-white">
+      Github Finder &copy
+      <a
+        href="http://www.zrruziev.com/"
+        target="_blank"
+        class="text-dark text-decoration-none mx-1"
+      >
+        zrruziev</a
+      >
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="github.js"></script>
-  <script src="ui.js"></script>
-  <script src="app.js"></script>
-</body>
+    <script src="github.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
-
-
-
-
